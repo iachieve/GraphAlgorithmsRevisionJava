@@ -1,4 +1,4 @@
-package BreadthFirstSeach;
+package graph.bfs;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,10 +7,10 @@ public class Vertex {
 	private int data;
 	private boolean visited;
 	private List<Vertex> neighborLis;
-	
+
 	public Vertex(int data) {
 		this.setData(data);
-		setNeighborLis(new ArrayList<Vertex>());
+		setNeighborLis(new ArrayList<>());
 	}
 
 	public int getData() {
@@ -36,15 +36,14 @@ public class Vertex {
 	public void setNeighborLis(List<Vertex> neighborLis) {
 		this.neighborLis = neighborLis;
 	}
-	
+
 	public void addNeighborVertex(Vertex neighborList) {
 		this.neighborLis.add(neighborList);
 	}
-	
+
 	@Override
 	public String toString() {
 		return "" + this.data;
 	}
-	
 
 }

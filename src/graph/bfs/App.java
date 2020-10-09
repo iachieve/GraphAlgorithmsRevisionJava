@@ -1,4 +1,4 @@
-package BreadthFirstSeach;
+package graph.bfs;
 
 public class App {
 
@@ -18,6 +18,10 @@ public class App {
 
 		bfs.bfs(vertex1);
 
+		//
+		BasicWebCrawler webCrawler = new BasicWebCrawler();
+		String rootUrl = "http://www.bbc.com";
+		webCrawler.discoverWeb(rootUrl);
 	}
 
 }
