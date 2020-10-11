@@ -9,6 +9,8 @@ public class SetsRevision {
 
 	public static void main(String[] args) {
 		// Hash set doesn't retain order
+		// linked hash set remembers the order you added items in
+		// tree sets sorts items in natural order
 
 		Set<String> hashSet1 = new HashSet<String>();
 		System.out.println("hash set isEmpty: " + hashSet1.isEmpty() + "\n");

@@ -1,24 +1,17 @@
 package collection.revision;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class ArrayListRevision {
 
 	public static void main(String[] args) {
 
-		ArrayList<Integer> arrayList = new ArrayList<>();
-		arrayList.add(0);
-		arrayList.add(1);
-		arrayList.add(2);
-		arrayList.add(3);
-		arrayList.add(4);
+		List<Integer> arrayList = new ArrayList<Integer>();
 		arrayList.add(5);
-		arrayList.add(6);
-		arrayList.add(7);
-
-		System.out.println(arrayList.get(5));
-		System.out.println(arrayList.size());
-
+		arrayList.get(0);
+		arrayList.remove(0);
+		System.out.println(arrayList.isEmpty());
 //		ArrayList<Integer> numbers = new ArrayList<Integer>();
 //		numbers.add(1);
 //		numbers.add(2);
